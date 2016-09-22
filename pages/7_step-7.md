@@ -27,8 +27,6 @@ The Data Management Life Cycle focuses on identifying, obtaining, and maintainin
 <h3><span>What is data and what types of data exist?</span></h3>
 <p><span>NIST defines data as “a subset of information in an electronic format that allows it to be retrieved or transmitted.” The data components in the Framework provide the information necessary to make access control decisions. There are three main types of data:</span></p>
 
-<br>
-
 | <center> Data Type </center> | <center> Description </center> |
 |:----------------------------:|--------------------------------|
 | **Subject/Identity Data** | Subject/identity data is a product of the Data Management Life Cycle and is used to uniquely identify a subject, which allows an access control model to map the subject to their appropriate access permissions. The Policy Execution part of the Framework then uses this information to grant access accordingly. |
