@@ -39,7 +39,7 @@ We’ve listed the five access control models below. When considering access con
 
 <br>
 
-</div>
+### Model Analysis
 
 | <center> Model </center> | <center> Benefits </center> | <center> Limitations </center> | <center> Key Takeaways </center> | 
 |:-----------------:|--------------|-----------------------|----------------|
