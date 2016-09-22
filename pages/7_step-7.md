@@ -27,11 +27,12 @@ The Data Management Life Cycle focuses on identifying, obtaining, and maintainin
 <h3><span>What is data and what types of data exist?</span></h3>
 <p><span>NIST defines data as “a subset of information in an electronic format that allows it to be retrieved or transmitted.” The data components in the Framework provide the information necessary to make access control decisions. There are three main types of data:</span></p>
 
-<strong><span>Subject/Identity Data</span></strong><p><span>Subject/identity data is a product of the Data Management Life Cycle and is used to uniquely identify a subject, which allows an access control model to map the subject to their appropriate access permissions. The Policy Execution part of the Framework then uses this information to grant access accordingly.</span></p>
+| <center> Data Type </center> | <center> Description </center> |
+|:----------------------------:|--------------------------------|
+| **Subject/Identity Data** | Subject/identity data is a product of the Data Management Life Cycle and is used to uniquely identify a subject, which allows an access control model to map the subject to their appropriate access permissions. The Policy Execution part of the Framework then uses this information to grant access accordingly. |
+| **Protected Resource Data** | Protected resource data describes details about a resource and is a product of the Data Management Life Cycle used to identify characteristics of a protected resource. This information can include the security clearance level required for access to a resource or specified emergency situations during which access can be restricted with increased requirements. |
+| **Environmental/Contextual Data** | Environmental/contextual data is the product of the Data Management Life Cycle and allows for more flexibility in access control decisions and policy. Environmental data can include information such as the time of day or current security threat level and provides the Policy Execution part of the Framework with more data elements to consider when making a decision. If this information is available, it can be incorporated into a decision to automatically restrict access to only those authorized during a period when the security threat level is elevated. |
 
-<strong><span>Protected Resource Data</span></strong><p><span>Protected resource data describes details about a resource and is a product of the Data Management Life Cycle used to identify characteristics of a protected resource. This information can include the security clearance level required for access to a resource or specified emergency situations during which access can be restricted with increased requirements.</span></p>
-
-<strong><span>Environmental/Contextual Data</span></strong><p><span>Environmental/contextual data is the product of the Data Management Life Cycle and allows for more flexibility in access control decisions and policy. Environmental data can include information such as the time of day or current security threat level and provides the Policy Execution part of the Framework with more data elements to consider when making a decision. If this information is available, it can be incorporated into a decision to automatically restrict access to only those authorized during a period when the security threat level is elevated.</span></p>
 
 </div>
 
