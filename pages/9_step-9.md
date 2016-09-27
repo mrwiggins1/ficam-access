@@ -27,6 +27,8 @@ You should create well-defined, meaningful policies that address the security ne
 
 <strong><span>ABAC, PBAC, and RAdAC</span></strong><p><span>These models may involve a significant number of external systems that host attribute data. Once the elements required to access a resource are defined, the Digital Policy is created based on those requirements. The Access Permissions from the Privilege Management Life Cycle are associated with the various requirements for accessing a specific resource defined in the Digital Policy. This policy is implemented via a centrally managed authorization engine. During the Policy Execution part of the Framework, this engine compares the data received during an access attempt, the data required by the resource, and the Access Permission information within the policy. A successful grant access decision is made if all requirements are met and the appropriate permissions are applied.</span></p>
 
+<div>
+
 ### Checklist
 
 > <i class="fa fa-check-square-o"></i> &nbsp;**Define the access control policy scope and requirements for a target asset or resource.** The following considerations and inputs influence the access control policy definition process, including but not limited to: environment, users, unauthorized access risks, and existing policies, rules or internal processes that currently govern access to the resource or asset. The purpose of the Policy Definition process is to hone the general access control requirements of the protected resource into specific, well-defined requirements while taking other factors into account, such as federal standards and agency policies.
