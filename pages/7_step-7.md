@@ -27,7 +27,6 @@ The Data Management Life Cycle focuses on identifying, obtaining, and maintainin
 | **Protected Resource Data** | The details about a protected resource relevant to making an access control decision. Protected resource data is a product of the Data Management Life Cycle and is used to identify characteristics of a protected resource. This information can include elements such as the security clearance level required for access to a resource or specified emergency situations during which access can be restricted even further with increased requirements. |
 | **Environmental/Contextual Data** | Data about situational elements that can affect access control decisions. Environmental/contextual data is the product of the Data Management Life Cycle and allows for more flexibility in access control decisions and policy. Environmental data can include information such as the time of day or current security threat level. This data provides the Policy Execution part of the Framework with more data elements to consider when making a decision. For instance, access to a resource may need to be limited to a smaller number of subjects if the security threat level is raised. If that information is available, it can be incorporated into the decision to automatically restrict access to only those authorized during a period when the security threat level is elevated. |
 
-</div>
 
 ### Checklist 
 
