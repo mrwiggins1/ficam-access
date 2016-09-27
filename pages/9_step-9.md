@@ -20,8 +20,8 @@ You should create well-defined, meaningful policies that address the security ne
 
 <div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
 
-<span>How are digital policies created?<span>
-<span>Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:<span>
+How are digital policies created?
+Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:
 
 <strong><span>ACL</span></strong><p><span>The creation of a digital policy for an ACL involves building the ACL based on the Access Permissions that define which subjects are approved for access to a resource and at what access levels. This is usually done by referencing a list of users that have been approved to access the resource, adding their account to the ACL within the resource, and associating the proper permissions with their account. The ACL is referenced when a subject makes an access attempt and access is granted accordingly.</span></p>
 
