@@ -19,7 +19,7 @@ $(function() {
 You should create well-defined, meaningful policies that address the security needs of your agency for effective access control. The Policy Administration Life Cycle produces policies that meet the requirements of the resource and access control model which are converted into digital policies in the Enablers part of the Framework. When using the more advanced access control models, these policies can support an agency’s efforts for establishing a centralized, enterprise-wide access control solution.
 
 <h3><span>How are digital policies created?</span></h3>
-<p><span>Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:<span><p>
+<p><span>Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:</span></p>
 
 <strong><span>ACL</span></strong><p><span>The creation of a digital policy for an ACL involves building the ACL based on the Access Permissions that define which subjects are approved for access to a resource and at what access levels. This is usually done by referencing a list of users that have been approved to access the resource, adding their account to the ACL within the resource, and associating the proper permissions with their account. The ACL is referenced when a subject makes an access attempt and access is granted accordingly.</span></p>
 
@@ -28,7 +28,7 @@ You should create well-defined, meaningful policies that address the security ne
 <strong><span>ABAC, PBAC, and RAdAC</span></strong><p><span>These models may involve a significant number of external systems that host attribute data. Once the elements required to access a resource are defined, the Digital Policy is created based on those requirements. The Access Permissions from the Privilege Management Life Cycle are associated with the various requirements for accessing a specific resource defined in the Digital Policy. This policy is implemented via a centrally managed authorization engine. During the Policy Execution part of the Framework, this engine compares the data received during an access attempt, the data required by the resource, and the Access Permission information within the policy. A successful grant access decision is made if all requirements are met and the appropriate permissions are applied.</span></p>
 
 
-### Checklist ###
+### Checklist
 
 > <i class="fa fa-check-square-o"></i> &nbsp;**Define the access control policy scope and requirements for a target asset or resource.** The following considerations and inputs influence the access control policy definition process, including but not limited to: environment, users, unauthorized access risks, and existing policies, rules or internal processes that currently govern access to the resource or asset. The purpose of the Policy Definition process is to hone the general access control requirements of the protected resource into specific, well-defined requirements while taking other factors into account, such as federal standards and agency policies.
 
