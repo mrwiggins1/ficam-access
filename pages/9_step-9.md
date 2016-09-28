@@ -18,8 +18,8 @@ $(function() {
 
 You should create well-defined, meaningful policies that address the security needs of your agency for effective access control. The Policy Administration Life Cycle produces policies that meet the requirements of the resource and access control model which are converted into digital policies in the Enablers part of the Framework. When using the more advanced access control models, these policies can support an agency’s efforts for establishing a centralized, enterprise-wide access control solution.
 
-<h3><span>How are digital policies created?</span></h3>
-<p><span>Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:</span></p>
+<h3>How are digital policies created?</h3>
+Each access control model has different requirements for the Digital Policy. As a result, the type of access control model being used ultimately determines the format of the digital policy. The differences between the access control models and how digital policies are created are outlined below:
 
 <strong><span>ACL</span></strong><p><span>The creation of a digital policy for an ACL involves building the ACL based on the Access Permissions that define which subjects are approved for access to a resource and at what access levels. This is usually done by referencing a list of users that have been approved to access the resource, adding their account to the ACL within the resource, and associating the proper permissions with their account. The ACL is referenced when a subject makes an access attempt and access is granted accordingly.</span></p>
 
