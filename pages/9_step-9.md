@@ -27,7 +27,6 @@ You should create well-defined, meaningful policies that address the security ne
 
 <strong><span>ABAC, PBAC, and RAdAC</span></strong><p><span>These models may involve a significant number of external systems that host attribute data. Once the elements required to access a resource are defined, the Digital Policy is created based on those requirements. The Access Permissions from the Privilege Management Life Cycle are associated with the various requirements for accessing a specific resource defined in the Digital Policy. This policy is implemented via a centrally managed authorization engine. During the Policy Execution part of the Framework, this engine compares the data received during an access attempt, the data required by the resource, and the Access Permission information within the policy. A successful grant access decision is made if all requirements are met and the appropriate permissions are applied.</span></p>
 
-<div>
 
 ### Checklist
 
