@@ -39,90 +39,13 @@ We’ve listed the five access control models below. When considering access con
 
 <br>
 
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
+### Model Analysis
 
-<h3><span>Access Control List (ACL)</span></h3>
-<p><span>Access to resources is granted on a resource-by-resource basis, based upon an individual’s inclusion and corresponding privileges, as noted on the resource’s ACL.</span></p>
+| <center> Model </center> | <center> Benefits </center> | <center> Limitations </center> | <center> Key Takeaways </center> | 
+|:-----------------:|--------------|-----------------------|----------------|
+| **Access Control List (ACL)** | • Simple framework which does not require pre-existing infrastructure <br><br> • Supported by common operating systems <br><br> • Widely used and accepted throughout the Federal Government <br><br> • Controlled locally at the resource level | • Ability to evaluate individual access privileges becomes extremely complex as the list grows larger over time <br><br> • Criteria for access and individual role/job duties are fluid over time, thereby placing a significant administrator burden on resources owners <br><br> • Nearly impossible to manage at an enterprise level due to the sheer volume of resources and ACLs <br><br> • Requires manual changes to ACL, a time consuming and error prone process <br><br> • Revocation of access privileges may be delayed due to non-automated communication methods (e.g., word of mouth, e-mail, paper form distribution, etc.) | ACLs are useful and often sufficient when granting access to resources to a relatively small number of internal users that can be easily managed and monitored by a resource owner |
+| **Role-Based Access Control (RBAC)** | • Supports groupings of individuals with particular roles based upon well-defined and trusted attributes <br><br> • Can accommodate centralized management <br><br> • Can be implemented at various levels within an organization, as long as a valid role is defined <br><br> • Supported by common operating systems and capable of group support as well | • Can be difficult to manage as each protected resource generally has unique role requirements, thereby resulting in large numbers of potential role assignments within an organization <br><br> • Difficult to manage granular access of individuals due to the rigid nature of role assignments <br><br> • Difficult to implement in a highly distributed agency (not centrally managed) <br><br> • Requires significant level of effort to determine appropriate alignment of privileges for users not linked to the agency’s organizational structure | RBAC can be useful in agencies that have established and well-defined roles for their users. Additionally, this model is effective when external users either do not require access to protected resources or when the host agency can easily control the roles assigned to external users. |
+| **Attribute-Based Access Control (ABAC)** | • Requires no advance knowledge of requestors <br><br> • An individual’s attributes can be correlated from multiple sources to create a unified identity <br><br> • Highly adaptable to changing needs; efficient for agencies where individuals come and go frequently | • Lengthy implementation time due to the need to correlate information and attributes from multiple sources for all potential users <br><br> • Reliant on authoritative identity/entitlement data – difficulty managing attribute conflicts between source systems <br><br> • Not natively supported by common operating systems <br><br> • Not appropriate for all environments (i.e., those with significant changes in risk level) | ABAC requires the ability to request and retrieve a variety of attributes and attribute sources for it to be an effective model in making access control decisions <br><br> Since ABAC is not natively supported by most systems, the availability of tools and technologies is extremely important |
+| **Policy-Based Access Control (PBAC)** | • Promotes compliance with standardized access controls <br><br> • Flexible in not being linked to only one type of access control <br><br> • Adapts quickly to new policy rules | • PBAC requires the design, deployment, and seamless integration of enterprise level systems (databases, directory services, etc.) <br><br> • Policies must be absolutely unambiguous to avoid unintentional, unauthorized access <br><br> • Entire enterprise must use the same attributes for access and those attributes must be authoritative.• Not natively supported by common operating systems | PBAC can benefit agencies that have resources which require varying levels of security and the budget to invest in the development of the standard elements required by the solution |
+| **Risk-Adaptable Access Control (RAdAC)** | • Has the ability to make real time access control available <br><br> • Can control multiple diverse systems- including digital policies as some systems may require different authentication levels for the same user based transactions <br><br> • Supports flexible situations | • Cannot always be automatic, user judgments are needed. <br><br> • Integrated systems must use standardized data exchange formats <br><br> • Policies must be unambiguous to avoid unintentional, unauthorized access <br><br> • Extensive considerations in adhering to policy and law – involves great care to be taken to ensure compliance <br><br> • Not natively supported by common operating systems | Agencies that likely will benefit from implementing a RAdAC system are those that: <br><br> • Need the flexibility to adapt their access control based on environmental conditions, such as risk and/or the need for situational awareness; <br><br> • Have well defined internal policies and/or may be required to comply with additional federal and regulatory policies; and <br><br> • Have tightly controlled enterprise environments consisting of well integrated systems that operate using standardized data exchange formats. |
 
-<strong><span>Benefits</span></strong>
-<p><span>• Simple framework which doesn't require pre-existing infrastructure.<br>• Supported by common operating systems.<br>• Widely used and accepted throughout the Federal Government.<br>• Controlled locally at the resource level.</span></p>
-
-<strong><span>Limitations</span></strong>
-<p><span>• Managing individual access privileges can become extremely complex over time due to volume and fluidity of roles/job duties.<br>• Difficult to manage at an enterprise level due to the sheer volume of resources and ACLs.<br>• Prone to manual changes and entry errors.<br>• Granting and revoking of access may be delayed due to non-automated communication methods (e.g., word of mouth, e-mail, paper form distribution, etc.).</span></p>
-
-<strong><span>Key Takeaways</span></strong>
-<p><span>ACLs are useful and often sufficient when granting access to resources to a relatively small number of internal users that can be easily managed and monitored by a resource owner.</span></p>
-
-</div>
-
-<br>
-
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
-
-<h3><span>Role-Based Access Control (RBAC)</span></h3>
-<p><span>Individuals are assigned to various roles within an organization, down to the resource level based upon certain identity and entitlement attributes. Access is determined by having a particular role assignment that corresponds to one or more resources.</span></p>
-
-<strong><span>Benefits</span></strong>
-<p><span>• Supports groupings of individuals with particular roles based upon well-defined and trusted attributes.<br>• Can accommodate centralized management.<br>• Can be implemented at various levels within an organization, as long as a valid role is defined.<br>• Supported by common operating systems and capable of group support as well.</span></p>
-
-<strong><span>Limitations</span></strong>
-<p><span>• Can be difficult to manage as each protected resource generally has unique role requirements, thereby resulting in large numbers of potential role assignments within an organization.<br>• Difficult to manage granular access of individuals due to the rigid nature of role assignments.<br>• Difficult to implement in a highly distributed agency (not centrally managed).<br>• Requires significant level of effort to determine appropriate alignment of privileges for users not linked to the agency’s organizational structure.</span></p>
-
-<strong><span>Key Takeaways</span></strong>
-<p><span> RBAC can be useful in agencies that have established and well-defined roles for their users. Additionally, this model is effective when external users either do not require access to protected resources or when the host agency can easily control the roles assigned to external users.</span></p>
-
-</div>
-
-<br>
-
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
-
-<h3><span>Attribute-Based Access Control (ABAC)</span></h3>
-<p><span>ABAC focuses on characteristics that describe people, resources and environments. The requester provides attributes which are compared to those documented as requirements for granting or denying access, at which point a decision is made.</span></p>
-
-<strong><span>Benefits</span></strong>
-<p><span>• Requires no advance knowledge of requestors.<br>• An individual’s attributes can be correlated from multiple sources to create a unified identity.<br>• Highly adaptable to changing needs; efficient for agencies where individuals come and go frequently.</span></p>
-
-<strong><span>Limitations</span></strong>
-<p><span>• Lengthy implementation time due to the need to correlate information and attributes from multiple sources for all potential users.<br>• Reliant on authoritative identity/entitlement data – difficulty managing attribute conflicts between source systems.<br>• Not natively supported by common operating systems.<br>• Not appropriate for all environments (i.e., those with significant changes in risk level).</span></p>
-
-<strong><span>Key Takeaways</span></strong>
-<p><span> ABAC requires the ability to request and retrieve a variety of attributes and attribute sources for it to be an effective model in making access control decisions. <br><br>Since ABAC is not natively supported by most systems, the availability of tools and technologies is extremely important. </span></p>
-
-</div>
-
-<br>
-
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
-
-<h3><span>Policy-Based Access Control (PBAC))</span></h3>
-<p><span>Access to resources is granted on a resource-by-resource basis, based upon an individual’s inclusion and corresponding privileges, as noted on the resource’s ACL.</span></p>
-
-<strong><span>Benefits</span></strong>
-<p><span>• Promotes compliance with standardized access controls.<br>• Flexible in not being linked to only one type of access control.<br>• Adapts quickly to new policy rules.</span></p> 
-
-<strong><span>Limitations</span></strong>
-<p><span>• PBAC requires the design, deployment, and seamless integration of enterprise level systems (databases, directory services, etc.).<br>• Policies must be absolutely unambiguous to avoid unintentional, unauthorized access.<br>• Entire enterprise must use the same attributes for access and those attributes must be authoritative.• Not natively supported by common operating systems.</span></p>
-
-<strong><span>Key Takeaways</span></strong>
-<p><span>PBAC can benefit agencies that have resources which require varying levels of security and the budget to invest in the development of the standard elements required by the solution. </span></p>
-
-</div>
-
-<br>
-
-<div style="background-color: #edf1f3;color: black;margin: 10px;padding: 10px">
-
-<h3><span>Risk-Adaptable Access Control (RAdAC)</span></h3>
-<p><span>Amount of information (peronsonal trustworthiness and enviornmental factors) required of requesters to verify their identity depends on the current threat level.</span></p>
-
-<strong><span>Benefits</span></strong>
-<p><span>• Has the ability to make real time access control available.<br>• Can control multiple diverse systems- including digital policies as some systems may require different authentication levels for the same user based transactions.<br>• Supports flexible situations. </span></p>
-
-<strong><span>Limitations</span></strong>
-<p><span>• Cannot always be automatic, user judgments are needed.<br>• Integrated systems must use standardized data exchange formats.<br>• Policies must be unambiguous to avoid unintentional, unauthorized access.<br>• Extensive considerations in adhering to policy and law; great care must be taken to ensure compliance.<br>• Not natively supported by common operating systems.</span></p>
-
-<strong><span>Key Takeaways</span></strong>
-<p><span>Agencies that may benefit from implementing a RAdAC system are those that:<br><br>• Need the flexibility to adapt their access control based on environmental conditions, such as risk and/or the need for situational awareness;<br>• Have well defined internal policies and/or may be required to comply with additional federal and regulatory policies; and<br>• Have tightly controlled enterprise environments consisting of well integrated systems that operate using standardized data exchange formats. </span></p>
-
-</div>
